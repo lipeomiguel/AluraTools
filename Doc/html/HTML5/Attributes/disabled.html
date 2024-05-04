@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso de HTML</title>
+    </head>
+    <body>
+        <form id="fords" novalidate method="get" action="./form.html" enctype="text/plain" target="_blank">
+            <fieldset disabled="disabled">
+                <legend>Novos Inputs</legend>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email:" autocomplete="off">
+            </fieldset>
+            <fieldset>
+                <legend>Esta habilitado</legend>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email:" autocomplete="off">
+            </fieldset>
+        </form>
+        <input type="text" name="peco" id="peco" placeholder="Digite seu peco:" autocomplete="off" form="fords">
+        <input type="submit" value="Submit" form="fords" formmethod="get" formnovalidate formaction="./autofocus.html">
+    </body>
+</html>

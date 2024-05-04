@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso de HTML</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Novos Inputs</legend>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email:">
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" placeholder="Digite seu email:">
+                <label for="url">URL:</label>
+                <input type="url" name="url" id="url" placeholder="Digite seu email:">
+                <label for="search">Search:</label>
+                <input type="search" name="search" id="search" placeholder="Digite seu email:">
+                <label for="number">Number:</label>
+                <input type="number" name="number" id="number" placeholder="Digite seu email:">
+                <label for="volume">Volume:</label>
+                <input type="range" name="volume" id="volume" placeholder="Digite seu email:">
+                <label for="data">Data:</label>
+                <input type="date" name="data" id="data" placeholder="Digite seu email:">
+                <label for="time">Time:</label>
+                <input type="time" name="time" id="time" placeholder="Digite seu email:">
+                <label for="color">Color:</label>
+                <input type="color" name="color" id="color" placeholder="Digite seu email:">
+                <label for="estado">Estado:</label>
+                <input type="text" name="estado" list="estados_list" placeholder="Digite seu estado:">
+                <datalist id="estados_list">
+                    <option label="MA" value="Maranhão"></option>
+                    <option label="SP" value="São Paulo"></option>
+                    <option label="RIO" value="Rio Janeiro"></option>
+                </datalist>
+                <select id="estados_pais">
+                    <option label="BR" ></option>
+                    <option label="EUA" ></option>
+                    <option label="NYC" ></option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                <label for="file">File:</label>
+                <input type="file" name="file" id="file" placeholder="Digite sua File">
+                <label for="image">Image:</label>
+                <input type="img" name="image" id="image" placeholder="Digite sua Image">
+                <label for="checkbox">Checkbox:</label>
+                <input type="checkbox" name="checkbox" id="checkbox" placeholder="Digite sua checkbox">
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </body>
+</html>

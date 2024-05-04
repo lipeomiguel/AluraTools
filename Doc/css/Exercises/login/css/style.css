@@ -1,0 +1,219 @@
+/*
+? http://meyerweb.com/eric/tools/css/reset/
+? v2.0 | 20110126
+? License: none (public domain)
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    line-height: 1;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #010409;
+    color: #fff;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ! END RESET */
+@media only screen and (min-width : 1224px) {
+    .container{
+        width: 600px;
+        height: 300px;
+        display: flex;
+        background-color: #0d1117;
+        border: 1px solid #30363D;
+        box-shadow:  0px 0px 10px aqua;
+        border-radius: 0.9rem;
+    }
+    .container-left{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    label{
+        width: 85%;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .container-title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    h1{
+        font-family: monospace;
+        font-size: 1.8rem;
+        color: aqua;
+    }
+    input{
+        min-width: 100%;
+        height: 60px;
+        border: 2px solid #0e1f39a0;
+        outline: none;
+        padding-left: 10px;
+        font-size: 0.8rem;
+        background-color: #30363d55;
+        color: #fff;
+    }
+    .container-rigth{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    button{
+        width: 150px;
+        height: 150px;
+        background-color: #191E23;
+        color: aqua;
+        text-transform: uppercase;
+        font-family: cursive;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: 1px solid #30363D;
+        border-radius: 100%;
+        position: absolute;
+        left: 35px;
+        box-shadow:  0px 0px 10px aqua;
+    }
+    button:hover,.container:hover{
+        border-color: aqua;
+        color: aqua;
+    }
+    button:hover{
+        cursor:pointer;
+    }
+}
+@media only screen and (max-width : 1224px) {
+    .container{
+        width: 500px;
+        height: 250px;
+        display: flex;
+        background-color: #0d1117;
+        border: 1px solid #30363D;
+        box-shadow:  0px 0px 10px aqua;
+        border-radius: 0.9rem;
+    }
+    .container-left{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    label{
+        width: 85%;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .container-title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    h1{
+        font-family: monospace;
+        font-size: 1.3rem;
+        color: aqua;
+    }
+    input{
+        min-width: 100%;
+        height: 50px;
+        border: 2px solid #0e1f39a0;
+        outline: none;
+        padding-left: 10px;
+        font-size: 0.8rem;
+        background-color: #30363d55;
+        color: #fff;
+    }
+    .container-rigth{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    button{
+        width: 150px;
+        height: 150px;
+        background-color: #191E23;
+        color: aqua;
+        text-transform: uppercase;
+        font-family: cursive;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: 1px solid #30363D;
+        border-radius: 100%;
+        position: absolute;
+        left: 35px;
+        box-shadow:  0px 0px 10px aqua;
+    }
+    button:hover,.container:hover{
+        border-color: aqua;
+        color: aqua;
+    }
+    button:hover{
+        cursor:pointer;
+    }
+}
+ 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f0f;
+            color: aliceblue;
+            font-size: 10px;
+        }
+        h1{
+            font-size: 2.7em;
+        }
+        p{
+                font-size: 20px;
+        }
+        span{
+                font-size: 0.8em;
+        }
+        @media only screen and (max-width:600px) {
+            body {
+                background-color: lightblue;
+                font-size: 10px;
+            }
+            h1{
+                font-size: 1.5em;
+            }
+            p{
+                font-size: 20px;
+            }
+            span{
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo com Medição EM</h1>
+    <p>
+        <span>Ele é divido pelo elemento pai! [ body / span = result ]</span>
+    </p>
+</body>
+</html>
