@@ -1,0 +1,390 @@
+:root {
+  --cor-fundo-white-low: #ebecee;
+  --cor-fundo-white: #ffffff;
+  --cor-text-azul-low: #002f52;
+  --cor-text-azul: #002f52f5;
+  --cor-text-black: #000000;
+  --cor-text-laranja: #eb9b00;
+  --cor-btn-scroll: #c4c4c4;
+  --cor-btn-scroll-hover: #002f52f5;
+}
+
+header {
+  width: 100%;
+  height: 4.8rem;
+  background-color: var(--cor-fundo-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+header .header_container {
+  width: 9rem;
+  height: 100%;
+  display: flex;
+}
+header .header_container::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 4.3rem;
+  height: 4.8rem;
+  background: linear-gradient(var(--cor-text-azul), var(--cor-text-azul-low));
+}
+header .header_container span {
+  width: 3.2rem;
+  margin-left: 0.7rem;
+  background-image: url("../img/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+header .header_container .active {
+  display: flex;
+}
+header .header_container div {
+  position: absolute;
+  z-index: 1;
+  top: 4.8rem;
+  display: none;
+  flex-direction: column;
+}
+header .header_container div ul {
+  width: 19rem;
+  display: inherit;
+  flex-direction: column;
+  gap: 0.48rem;
+  background-color: var(--cor-fundo-white);
+}
+header .header_container div ul li {
+  padding: 1.44rem 1.44rem 0.48rem 1.44rem;
+  background-color: var(--cor-fundo-white);
+}
+header .header_container div ul li:last-child {
+  padding: 1.44rem 1.44rem;
+}
+header .header_container div ul li p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.96rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--cor-text-azul);
+}
+header .header_container div ul li .active {
+  color: var(--cor-text-laranja);
+  font-weight: 600;
+}
+header .header_container img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-top: 1.4rem;
+  margin-left: 1.4rem;
+}
+header .header_container_acesse img {
+  width: 3.48rem;
+  height: 3.48rem;
+  gap: 0.6rem;
+}
+
+.main_context_banner {
+  width: 100%;
+  height: 15.9rem;
+  background: linear-gradient(var(--cor-text-azul), var(--cor-text-azul-low));
+  opacity: 0.95;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_context_banner .main_context_banner_container {
+  width: 80%;
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 0.8rem;
+}
+.main_context_banner .main_context_banner_container h4,
+.main_context_banner .main_context_banner_container p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Krona One" sans-serif;
+  color: var(--cor-fundo-white);
+}
+.main_context_banner .main_context_banner_container p {
+  font-size: 0.96rem;
+  font-weight: 500;
+}
+.main_context_banner .main_context_banner_container input {
+  width: 100%;
+  height: 2.3rem;
+  background-color: transparent;
+  border: 1px solid var(--cor-fundo-white);
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: var(--cor-fundo-white);
+  padding-left: 0.5rem;
+}
+
+.main_context_shop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_context_shop .main_context_shop_container {
+  width: 100%;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+}
+.main_context_shop .main_context_shop_container .main_context_shop_container_scroll {
+  height: 100px;
+}
+.main_context_shop .main_context_shop_context_scroll {
+  width: 100%;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.main_context_shop .main_context_shop_context_scroll .main_context_shop_context_scroll-btn {
+  width: 50%;
+  height: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.main_context_shop .main_context_shop_context_scroll .main_context_shop_context_scroll-content {
+  width: 100%;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 1.5rem;
+}
+
+.main_context_shop_context_focus {
+  width: 95%;
+  padding-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_context_shop_context_focus .main_context_shop_context_focus-container {
+  width: 32.4rem;
+  height: 90%;
+  background-color: var(--cor-fundo-white);
+  border: 1px solid transparent;
+  border-radius: 0.4rem;
+  display: flex;
+}
+.main_context_shop_context_focus .main_context_shop_context_focus-container_context {
+  display: flex;
+  flex-direction: column;
+  margin: 0.6rem 0.7rem;
+  gap: 0.6rem;
+}
+.main_context_shop_context_focus .main_context_shop_context_focus-container_context h4 {
+  font-size: clamp(0.9rem, 2.5vw, 1.55rem);
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: var(--cor-text-laranja);
+}
+.main_context_shop_context_focus .main_context_shop_context_focus-container_context h5 {
+  font-size: clamp(0.9rem, 2.5vw, 1.45rem);
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: var(--cor-text-azul);
+}
+.main_context_shop_context_focus .main_context_shop_context_focus-container_context p {
+  font-size: clamp(0.7rem, 2.5vw, 1.35rem);
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: var(--cor-text-black);
+}
+.main_context_shop_context_focus .main_context_shop_context_focus-container_context div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 0.4rem;
+}
+.main_context_shop_context_focus .main_context_shop_context_focus-container_context div img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.main_context_shop_context_focus .main_context_shop_context_focus-container_context_saber_mais {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.4rem 0.7rem;
+  gap: 0.5rem;
+}
+.main_context_shop_context_focus .main_context_shop_context_focus-container_context_saber_mais a {
+  padding: 1rem;
+  background-color: var(--cor-text-laranja);
+  text-decoration: none;
+  color: var(--cor-fundo-white);
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.main_context_shop_context_focus .main_context_shop_context_focus-container_context_saber_mais svg {
+  height: 6rem;
+  border-radius: 1px solid transparent;
+  border-radius: 1.8rem;
+}
+
+.main_context_shop_context_focus-container_context_start {
+  width: 100%;
+  height: 3.5rem;
+}
+
+.section_title_shop {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+  color: var(--cor-text-laranja);
+}
+
+.main_context_shop_container_title {
+  width: 100%;
+  height: 2.6rem;
+  text-align: center;
+  padding-top: 0.95rem;
+  background-color: var(--cor-fundo-white);
+}
+
+.shop_prime_main {
+  height: 6.6rem;
+  border-radius: 1px solid transparent;
+  border-radius: 0.2rem;
+}
+
+.circular_btn_shop {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--cor-btn-scroll);
+}
+
+.circular_btn_active {
+  background-color: var(--cor-btn-scroll-hover);
+}
+
+.main_context_first_product {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_context_first_product .main_context_first_product_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(var(--cor-text-azul), var(--cor-text-azul-low));
+}
+.main_context_first_product .main_context_first_product_container h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1.4rem;
+  color: var(--cor-fundo-white);
+}
+.main_context_first_product .main_context_first_product_container div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  padding-bottom: 1.4rem;
+}
+.main_context_first_product .main_context_first_product_container div a {
+  padding: 1.2rem 1.74rem;
+  background-color: var(--cor-text-laranja);
+  text-decoration: none;
+  color: var(--cor-fundo-white);
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.main_context_first_product_container_notification {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--cor-text-azul);
+  background-color: var(--cor-fundo-white);
+}
+.main_context_first_product_container_notification .main_context_first_product_container_notification_cotainer {
+  width: 90%;
+  display: inherit;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+.main_context_first_product_container_notification .main_context_first_product_container_notification_cotainer h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--cor-text-azul);
+}
+.main_context_first_product_container_notification .main_context_first_product_container_notification_cotainer p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.99rem;
+  font-weight: 300;
+  color: var(--cor-text-azul-low);
+}
+.main_context_first_product_container_notification .main_context_first_product_container_notification_cotainer input {
+  width: 100%;
+  height: 2.6rem;
+  background-color: transparent;
+  border: 1px solid var(--cor-text-azul);
+  border-radius: 1.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--cor-text-azul);
+}
+
+.footer {
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-fundo-white);
+}
+.footer .footer-cotainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 0.8rem;
+}
+.footer .footer-cotainer h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--cor-text-azul);
+}
+
+/*# sourceMappingURL=layout.css.map */
