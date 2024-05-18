@@ -1,0 +1,7 @@
+const element = document.getElementsByClassName("container")
+const array = new Array(...element);
+array.map((item)=>{
+  item.addEventListener("mouseup",()=>{
+    const classItem = item.classList.add("mouseover")
+  })
+})
