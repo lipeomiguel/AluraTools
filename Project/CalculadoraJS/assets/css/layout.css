@@ -1,0 +1,63 @@
+.main-calculadora {
+  width: 500px;
+  height: 600px;
+  border: 3px solid var(--background-calc-color);
+  background: var(--background-calc-color);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-calculadora .display {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-display);
+  border: 1px solid var(--border-color-main);
+  color: var(--color-display);
+  font-size: 4.9rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+}
+.main-calculadora .container-calculadora {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.main-calculadora .container-calculadora div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-calculadora .container-calculadora div span {
+  cursor: pointer;
+  width: 99%;
+  height: 99%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  border: 2px solid var(--border-color-main);
+  background-color: #211f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-calculadora .container-calculadora div .color-gren {
+  background-color: green;
+}
+.main-calculadora .container-calculadora div .color-laranja {
+  background-color: orange;
+}
+.main-calculadora .container-calculadora div .color-red {
+  background-color: red;
+}
+
+/*# sourceMappingURL=layout.css.map */
