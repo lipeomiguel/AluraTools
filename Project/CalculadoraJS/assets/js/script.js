@@ -77,3 +77,34 @@ getElement.forEach((item)=>{
     addElementDisplay(index);
   });
 })
+function helloWorld(){
+  console.log("Hello World");
+}
+function xmlRequest(method='GET',url='https://api.ipify.org?format=json',asyncCallback=true,callback=false){
+  this.method = method;
+  this.url = url;
+  this.asyncCallback = asyncCallback;
+  this.callback = callback;
+  this.return = (callback)=>{
+      /**
+        * ! Check if the callback is being called!
+        * ? ajax.return(?);
+      **/
+      const xml = new XMLHttpRequest();
+      xml.open(this.method,this.url,this.asyncCallback);
+      xml.send();
+      xml.onreadystatechange = ()=>{
+        if(xml.readyState == 4){
+          callback(xml);
+      }
+    }
+  }
+}
+const ajax = new xmlRequest();
+console.log(ajax.return(callReturn)); 
+function callReturn(s){
+  console.log(s.response);
+  const json = JSON.parse(s.response);
+  console.log(json.ip);
+  console.log(s.status);
+}
