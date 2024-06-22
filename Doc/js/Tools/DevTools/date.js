@@ -1,0 +1,12 @@
+const date = new Date();
+const dia = date.getDate();
+const mes = date.getMonth();
+const ano = date.getFullYear();
+const hora = date.getHours();
+const minutos = date.getMinutes();
+const segundos = date.getSeconds();
+const diaSemana = date.getDay();
+const diaSemanaArray = ["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"];
+const mesArray = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+const data = `${diaSemanaArray[diaSemana]}, ${dia} de ${mesArray[mes]} de ${ano} - ${hora}:${minutos}:${segundos}`;
+console.log(data);

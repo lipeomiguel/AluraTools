@@ -1,0 +1,285 @@
+.header {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(var(--background-color), var(--background-liner-color));
+}
+.header .header-main {
+  width: 100%;
+  height: 14.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header-main .container-header {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-main .container-header .logo-header .logo-header-img {
+  width: 90%;
+  max-width: 18.2rem;
+}
+.header .header-main .container-header .header-hr-logo {
+  display: block;
+  width: 100%;
+  height: 0.1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 1.3rem;
+  margin: 1.2rem 0;
+}
+.header .header-main .container-header .menu-header {
+  width: 100%;
+  height: 20%;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+  gap: calc(0.3rem + 4vw);
+}
+.header .header-main .container-header a {
+  text-decoration: none;
+  color: var(--text-color);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(0.7rem, 1vw, 1.5rem);
+}
+.header .header-main .container-header a:hover {
+  color: var(--text-hover-color);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.02);
+}
+.header .header-context {
+  width: 100%;
+  height: calc(100% - 14.6rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-context .header-container-context {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header .header-context .header-container-context .header-summury-context {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .header-context .header-container-context .header-summury-context h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2.7rem, 2.5vw, 1.4rem);
+  font-weight: 500;
+  color: var(--text-color);
+  text-align: center;
+}
+.header .header-context .header-container-context .header-summury-context h1 span {
+  color: var(--span-color);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.02);
+}
+.header .header-context .header-container-context .header-summury-context button {
+  cursor: pointer;
+  padding: calc(0.4rem + 0.9vw) calc(0.4rem + 4.3vw);
+  border: 1px solid transparent;
+  border-radius: clamp(2.7rem, 2.5vw, 1.4rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--btn-text-color);
+  margin-top: 1.5rem;
+  background: var(--btn-header--color);
+}
+.header .header-context .header-container-context .header-summury-context button:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.02);
+}
+.header .header-context .header-container-context img {
+  width: 28.2rem;
+}
+
+.service-space {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10.4rem;
+}
+.service-space .service-space-local-one,
+.service-space .service-space-local-two {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.service-space .service-space-local-one img,
+.service-space .service-space-local-two img {
+  width: 550px;
+}
+.service-space .service-space-local-one div,
+.service-space .service-space-local-two div {
+  width: 550px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.service-space .service-space-local-one div h3,
+.service-space .service-space-local-two div h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.9rem, 2.5vw, 1.4rem);
+  color: var(--span-color);
+  text-align: left;
+  line-height: 1.1;
+}
+.service-space .service-space-local-one div h5,
+.service-space .service-space-local-two div h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: clamp(1.4rem, 2.5vw, 1.4rem);
+  text-align: left;
+  line-height: 1.4;
+}
+.service-space .service-space-local-one div img,
+.service-space .service-space-local-two div img {
+  width: 100%;
+  max-width: 28.6rem;
+}
+
+.service-space-galery {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+}
+.service-space-galery .service-img {
+  width: 100% !important;
+  height: 24rem !important;
+}
+
+.product-service {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(180deg, var(--background-color) 0%, var(--background-liner-color) 70%);
+}
+.product-service .product-services-all {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+.product-service .product-services-all .product-services-select {
+  width: 400px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid var(--product-border-color);
+  border-radius: 0.8rem;
+  background: linear-gradient(180deg, var(--product-background-color) 0%, var(--product-background-secund-color) 100%);
+}
+.product-service .product-services-all .product-services-select img:first-child {
+  width: 90%;
+  max-width: 4.6rem;
+  margin-top: 1.7rem;
+}
+.product-service .product-services-all .product-services-select img:last-child {
+  width: 90%;
+  max-width: 4.6rem;
+}
+.product-service .product-services-all .product-services-select h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.9rem, 2.5vw, 1.4rem);
+  color: var(--span-color);
+  text-align: center;
+  line-height: 1.1;
+}
+.product-service .product-services-all .product-services-select p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: clamp(1.4rem, 2.5vw, 1.4rem);
+  text-align: center;
+  line-height: 1.2;
+  padding: 0.2rem 1.5rem;
+}
+.product-service .product-services-newsletter {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.product-service .product-services-newsletter img {
+  width: 90%;
+  max-width: 9.6rem;
+}
+.product-service .product-services-newsletter .product-services-newsletter-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+}
+.product-service .product-services-newsletter .product-services-newsletter-container h3 {
+  font-family: "Krona One", sans-serif;
+  font-weight: 500;
+  font-size: 1.9rem;
+}
+.product-service .product-services-newsletter .product-services-newsletter-container p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: clamp(1.4rem, 2.5vw, 1.4rem);
+  text-align: center;
+  line-height: 1.2;
+  padding: 0.2rem 1.5rem;
+}
+.product-service .product-services-newsletter .product-services-newsletter-container div {
+  display: flex;
+}
+.product-service .product-services-newsletter .product-services-newsletter-container div input {
+  padding: 0.8rem 6.5rem;
+  border: 1px solid var(--product-input-background-color);
+  border-radius: 1.8rem;
+  border-right: 0px solid transparent;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: clamp(1.1rem, 2.5vw, 1.1rem);
+  text-align: center;
+  line-height: 0.9;
+  margin: 0;
+}
+.product-service .product-services-newsletter .product-services-newsletter-container div button {
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--product-input-background-color);
+  color: var(--btn-text-color);
+  border-radius: 1.8rem;
+  border-left: 0px solid transparent;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.4rem, 2.5vw, 1.4rem);
+  text-align: center;
+  line-height: 1.2;
+  background: var(--btn-header--color);
+}
+.product-service .product-services-newsletter .product-services-newsletter-container div button:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.02);
+}
+
+/*# sourceMappingURL=layout.css.map */
